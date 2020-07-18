@@ -18,7 +18,7 @@ Write JavaScript below that logs:
 let allPElements = document.querySelectorAll('p');
 console.log(allPElements);
 
-let firstDivElement = document.querySelector(".site-header");
+let firstDivElement = document.querySelector(".site-header.container");
 
 console.log(firstDivElement);
 
@@ -26,7 +26,7 @@ let jumbotronT = document.querySelector("#jumbotron-text");
 
 console.log(jumbotronT);
 
-let primaryContentP= document.querySelectorAll(".primary-content");
+let primaryContentP= document.querySelectorAll(".primary-content p");
 
 console.log(primaryContentP);
 
