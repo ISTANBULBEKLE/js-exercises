@@ -88,10 +88,10 @@ When the 'Larger links!' button is clicked, the text of all links on the page sh
 let linksPage = document.querySelector("#largerLinksBtn");
 linksPage.addEventListener("click", textSizeGetBigger);
 let myfontSize = 16;
-function textSizeGetBigger() {
-  let parentDiv = document.querySelector(".buttons");
-  //console.log("test")
-  myfontSize ++;
-  parentDiv.style.fontSize = `${myfontSize}px`;
-}
 
+function textSizeGetBigger() {
+    let parentDiv = document.querySelector(".buttons");
+    //console.log("test")
+    myfontSize++;
+    parentDiv.style.fontSize = `${myfontSize}px`;
+}
