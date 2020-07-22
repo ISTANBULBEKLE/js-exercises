@@ -89,9 +89,9 @@ let linksPage = document.querySelector("#largerLinksBtn");
 linksPage.addEventListener("click", textSizeGetBigger);
 let myfontSize = 16;
 function textSizeGetBigger() {
-  let parentDiv = document.querySelector(".buttons");
+  let allAnchorEls = document.getElementsByTagName("a");
   //console.log("test")
   myfontSize ++;
-  parentDiv.style.fontSize = `${myfontSize}px`;
+  allAnchorEls.style.fontSize = `${myfontSize}px`;
 }
 
