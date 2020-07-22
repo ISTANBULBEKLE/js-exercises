@@ -74,6 +74,7 @@ let addNewParagraph = document.querySelector("#addTextBtn");
 addNewParagraph.addEventListener("click", addSomeMoreText);
 
 function addSomeMoreText() {
+    console.log("test");
   let paragraph = document.createElement("p");
     paragraph.textContent = "Read more below."; 
   let buttonSame = document.querySelector(".buttons")
@@ -88,18 +89,14 @@ When the 'Larger links!' button is clicked, the text of all links on the page sh
 */
 
 let largeButton = document.getElementById("largerLinksBtn");
-console.log (largeButton);
+console.log(largeButton);
 largeButton.addEventListener("click", textSizeBigger);
-//let myfontSize = 26;
 
 function textSizeBigger() {
   let allAnchorEls = document.getElementsByTagName("a");
-  //console.log("test")
-  //myfontSize ++;
-    console.log(allAnchorEls);
+
   for (let i=0; i < allAnchorEls.length; i++){
       allAnchorEls[i].style.fontSize = "50px";
-      //`${myfontSize}px`;
   }
   
 }
